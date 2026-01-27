@@ -24,7 +24,7 @@ public class Company {
     private String location;
 
     @ManyToOne
-    private User owner; // recruiter
+    private User owner;
 
     @OneToMany(mappedBy = "company")
     private List<Job> jobs;
